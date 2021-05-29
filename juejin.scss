@@ -3,10 +3,11 @@ $line-space: 22px;
 
 .markdown-body {
   word-break: break-word;
-  line-height: 1.75;
-  font-weight: 400;
-  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: /*15px*/18px;
   overflow-x: hidden;
+  background:#F9F9F9;
   color: #333;
 
   h1,
@@ -21,23 +22,35 @@ $line-space: 22px;
     padding-bottom: 5px;
   }
   h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
+    background-color: #2f86e8;
+    color: #fff;
+    font-weight: bold;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: /*2.6rem*/38px;
+    margin-bottom: /*2rem*/30px;
   }
   h2 {
-    padding-bottom: 12px;
-    font-size: 24px;
-    border-bottom: 1px solid #ececec;
+    border: 1px solid #2f86e8;
+    color: #2f86e8;
+    margin: 30px 0 20px 0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: /*2.2rem*/32px;
   }
   h3 {
-    font-size: 18px;
-    padding-bottom: 0;
+    font-size: /*2.0rem*/30px;
+    color: #2f86e8;
+    padding: 0px 10px;
   }
   h4 {
-    font-size: 16px;
+    font-size: /*1.6rem*/24px;
+    padding: 0px 8px;
   }
   h5 {
-    font-size: 15px;
+    font-size: /*1.2rem*/18px;
+    padding: 0px 4px;
   }
   h6 {
     margin-top: 5px;
@@ -67,7 +80,7 @@ $line-space: 22px;
     word-break: break-word;
     border-radius: 2px;
     overflow-x: auto;
-    background-color: #fff5f5;
+    background-color: #fffced;
     color: #ff502c;
     font-size: 0.87em;
     padding: 0.065em 0.4em;
@@ -91,8 +104,8 @@ $line-space: 22px;
   }
 
   a {
-    text-decoration: none;
-    color: #0269c8;
+    text-decoration: underline;
+    color: #03c;
     border-bottom: 1px solid #d1e9ff;
     &:hover,
     &:active {
@@ -102,18 +115,23 @@ $line-space: 22px;
 
   table {
     display: inline-block !important;
-    font-size: 12px;
+    font-size: 11px;
     width: auto;
     max-width: 100%;
     overflow: auto;
-    border: solid 1px #f6f6f6;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 0;
+    border-bottom: 0;
+    border-top-color: #E5E5E5;
+    border-left-color: #E5E5E5;
   }
   thead {
-    background: #f6f6f6;
-    color: #000;
+    background: #7f7f7f;
+    color: #ffffff;
     text-align: left;
   }
-  tr:nth-child(2n) {
+  tr {
     background-color: #fcfcfc;
   }
   th,
@@ -126,11 +144,14 @@ $line-space: 22px;
   }
 
   blockquote {
-    color: #666;
-    padding: 1px 23px;
-    margin: 22px 0;
-    border-left: 4px solid #cbcbcb;
-    background-color: #f8f8f8;
+
+    border-left: 3px solid #2f86e8;
+    background-color: #eff6ff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-bottom: none;
+    padding: 10px 20px 10px 15px;
+    border-radius: 0 5px 5px 0;
     &::after {
       display: block;
       content: '';
